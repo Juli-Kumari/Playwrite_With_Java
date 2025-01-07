@@ -64,5 +64,9 @@ URL  = https://playwright.dev/java/
 9. run only a subset of tests
 10. network monitoring
 
+## generate code from inspector
+From terminal we can run 
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://www.flipkart.com/"
 
+=> By default the inspector window gives class name as 'Example'
 
