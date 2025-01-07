@@ -3,6 +3,7 @@
 Playwrite: By microsoft 
 
 Puppetter: Chromium -- by GOOGLE
+
 Pre Install:- Java (java --version), Maven (mvn --version)
 
 URL  = https://playwright.dev/java/
@@ -52,7 +53,7 @@ URL  = https://playwright.dev/java/
 8. allure report
 9. generates PDF
 
-## Common features between both
+## Common features between both (cypress & playwrite)
 1. good documentation
 2. API testing
 3. point & click test recording
@@ -69,4 +70,12 @@ From terminal we can run
 mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://www.flipkart.com/"
 
 => By default the inspector window gives class name as 'Example'
+
+## Terms in playwrites
+1. newPage() => playwrite assumed every new tab as a new page.
+2. In playwrite we have multiple configuration(multiple browser) --> multiple context --> multiple pages.
+3. By default tests will run in headless mode.
+4. Set headed mode ON ----> Browser browser = playwright.chromium().launch( new BrowserType.LaunchOptions().setHeadless(false));
+5. .locator() --> used to locate the elements on a web page. we can pass parameter as 'CSS' or 'XPATH' both.
+6. for assertion ---> import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
