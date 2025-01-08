@@ -77,5 +77,11 @@ mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="co
 3. By default tests will run in headless mode.
 4. Set headed mode ON ----> Browser browser = playwright.chromium().launch( new BrowserType.LaunchOptions().setHeadless(false));
 5. .locator() --> used to locate the elements on a web page. we can pass parameter as 'CSS' or 'XPATH' both.
+6. page.getByPlaceholder("Username");  --> get locator directly from the placeholder value.
 6. for assertion ---> import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+7. Close all the event
+    page.close();
+    browser.close();
+    playwright.close();
+8. 
 
