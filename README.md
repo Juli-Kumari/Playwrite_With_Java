@@ -83,5 +83,11 @@ mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="co
     page.close();
     browser.close();
     playwright.close();
-8. 
-
+OR
+   playwright.close();
+8. a.) Error: Error: strict mode violation:
+ In selenium there are 2 methods --->
+    i.) findElement()
+   ii.) findElements()
+But in playwrite .locator() -> if only element present then it will return 1 ele. if multiple ele present then it will returned multiple elements.
+9. 
