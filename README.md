@@ -90,4 +90,11 @@ OR
     i.) findElement()
    ii.) findElements()
 But in playwrite .locator() -> if only element present then it will return 1 ele. if multiple ele present then it will returned multiple elements.
-9. 
+9. type vs fill method
+   fill --> it clear the existing value & just inject the value to any field. not reduce the char.
+   type ---> type one char at a time
+10. there is not assertEquals() type method present like selenium only assertThat method present. assertion in PW
+    Locator placeholder = page.locator("#fullName");
+    assertThat(placeholder).hasAttribute("placeholder", "Enter first & last name");
+11. default time is 5 sec bydefault in PW.
+12. select dropdown (select --> options in DOM) vs jquery dropdown (span , div in DOM)
