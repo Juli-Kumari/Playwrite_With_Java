@@ -110,4 +110,6 @@ But in playwrite .locator() -> if only element present then it will return 1 ele
 17. Page.ScreenshotOptions screenshotOptions = new Page.ScreenshotOptions();
     page.screenshot( screenshotOptions.setPath(Paths.get("./snap/masking.png"))
     .setMask(Arrays.asList(inputFiledLocator)));
+18. CodeGen --> cann't do the assetion by it's own. Do click action, so that we can get a locator for that particular elements.
+19. 
    
