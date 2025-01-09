@@ -97,4 +97,5 @@ But in playwrite .locator() -> if only element present then it will return 1 ele
     Locator placeholder = page.locator("#fullName");
     assertThat(placeholder).hasAttribute("placeholder", "Enter first & last name");
 11. default time is 5 sec bydefault in PW.
-12. select dropdown (select --> options in DOM) vs jquery dropdown (span , div in DOM)
+12. select dropdown (select --> options in DOM) vs jquery dropdown (span , div in DOM). 
+   
