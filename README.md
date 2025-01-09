@@ -99,4 +99,15 @@ But in playwrite .locator() -> if only element present then it will return 1 ele
 11. default time is 5 sec bydefault in PW.
 12. select dropdown (select --> options in DOM) vs jquery dropdown (span , div in DOM). 
 13. PW do scrolling automatically.
+14. In built screenshot functionality. 
+15. Page.ScreenshotOptions screenshotOptions = new Page.ScreenshotOptions();
+    page.screenshot(screenshotOptions.setPath(Paths.get("./snap/site.png")));
+
+    i.) page level screenshot ->  Page.ScreenshotOptions
+  
+   ii.) Locator level screenshot ->Locator.ScreenshotOptions() 
+16.  masking locator -> hiding the credentials.
+17. Page.ScreenshotOptions screenshotOptions = new Page.ScreenshotOptions();
+    page.screenshot( screenshotOptions.setPath(Paths.get("./snap/masking.png"))
+    .setMask(Arrays.asList(inputFiledLocator)));
    
